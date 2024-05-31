@@ -1,6 +1,88 @@
 export const HangmanDrawing = () => {
+
+    const HEAD = 
+        (
+            <div style={{ 
+                height: "50px",
+                width: "50px",
+                borderRadius: "100%",
+                border: "10px solid #000",
+                position: "absolute",
+                right: "-30px",
+                top: "50px"
+             }}></div>
+        )
+        const BODY = 
+        (
+            <div style={{ 
+                height: "100px",
+                width: "10px",
+                background: "#000",
+                position: "absolute",
+                right: "0",
+                top: "120px"
+             }}></div>
+        )
+
+        const ARMRIGHT = 
+        (
+            <div style={{ 
+                height: "100px",
+                width: "10px",
+                background: "#000",
+                position: "absolute",
+                right: "-45px",
+                top: "100px",
+                transform: "rotate(66deg)"
+             }}></div>
+        )
+        const ARMLEFT = 
+        (
+            <div style={{ 
+                height: "100px",
+                width: "10px",
+                background: "#000",
+                position: "absolute",
+                right: "45px",
+                top: "100px",
+                transform: "rotate(-66deg)"
+             }}></div>
+        )
+
+        const LEGRIGHT = 
+        (
+            <div style={{ 
+                height: "100px",
+                width: "10px",
+                background: "#000",
+                position: "absolute",
+                right: "-25px",
+                bottom: "120px",
+                transform: "rotate(-30deg)"
+             }}></div>
+        )
+        const LEGLEFT = 
+        (
+            <div style={{ 
+                height: "100px",
+                width: "10px",
+                background: "#000",
+                position: "absolute",
+                right: "25px",
+                bottom: "120px",
+                transform: "rotate(30deg)"
+             }}></div>
+        )
+
+
     return (
         <div style={{ position: "relative" }}>
+            {HEAD}
+            {BODY}
+            {ARMRIGHT}
+            {ARMLEFT}
+            {LEGRIGHT}
+            {LEGLEFT}
             <div style={{ 
                  height: "50px",
                  width: "10px",
